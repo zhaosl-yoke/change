@@ -183,7 +183,7 @@ body{
 .inputs .checkBox span:nth-of-type(1) {
 	text-align: inherit;
 	/* text-indent: 0.1rem; */
-	margin-right: 0.3rem;
+	margin-right: 0.1rem;
 }
 .inputs .checkBox span img{
 	width: 0.32rem;
