@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index2.css" />
+	</head>
+	<body>
+		<div class="shadow" style="display:none;">
+			<div class="box">
+				<div class="box_text">
+					<p class="title">提示</p>
+					<p class="text">您已注册过artapp，【邀请好友】可获得精彩大师课礼包，赶快登录吧！~</p>
+				</div>
+				<p class="box_btn">
+					<span class="cancel">取消</span>
+					<span class="confirm" onclick="conFirm(this)">确定</span>
+				</p>
+			</div>
+		</div>
+		<div class="shadow2" style="display:none;">
+			<p class="text_con"></p>
+			<img src="img/error.png" class="close">
+			<img src="img/img.png" class="regImg">
+			<img src="img/button.png" class="button">
+		</div>
+		<div class="container">
+			<div class="top" align="center">
+				<span class="num">1</span>
+				<img src="img/top_bj.png" class="topImg"/>
+				<img src="" class="inviteText"/>
+				<p class="inviteNum1"></p>
+				<p class="inviteNum2"></p>
+				<!-- <img src="" class="inviteNum"/> -->
+				<p class="reward" style="display:none;">学习雷锋当然有奖，艺术小天使雷锋奖<span></span>元</p>
+			</div>
+			<div class="register">
+				<div class="inputs">
+					<div class="mobile">
+						<input type="text" placeholder="请输入手机号"/>
+						<div class="padding">
+							<span class="msg">获取验证码</span>
+						</div>
+					</div>
+					<div class="message">
+						<input type="text" placeholder="请输入短信验证码"/>
+					</div>
+					<div class="password">
+						<input type="text" placeholder="请输入密码"/>
+					</div>
+					<div class="checkBox" style="padding-left:0.2rem;">
+						<span>请选择身份</span>
+						<span onclick="changeNoticeType(this)" class="spanSechduRadio">
+							<input type="radio" name="type" id="teacher" style="visibility: hidden;"/>
+							<img src="img/close.png" alt="" />
+							<label for="teacher">老师</label>
+						</span>
+						<span onclick="changeNoticeType(this)" class="spanSechduRadio">
+							<input type="radio" name="type" id="student" style="visibility: hidden;"/>
+							<img src="img/close.png" alt="" />
+							<label for="student">学生</label>
+						</span>
+						<p id="warn">千万不要错</p>
+					</div>
+				</div>
+			</div>
+			<div class="btn">立即注册</div>
+			<div class="process">
+				<img src="img/process.png"/>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/common/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/common/rem.js"></script>
+		<script type="text/javascript" src="js/common/service.js"></script>
+		<script type="text/javascript" src="js/common/md5.js"></script>
+		<script type="text/javascript" src="js/index2.js"></script>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	</body>
+</html>

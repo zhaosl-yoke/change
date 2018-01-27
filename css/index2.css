@@ -1,0 +1,298 @@
+body{
+	display: flex;
+	flex-direction:column;
+}
+.container{
+	flex: 1;
+	background: url(../img/bg.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	padding-bottom: 0.98rem;
+}
+.top{
+	position: relative;
+	width: 6.96rem;
+	margin: 0 auto;
+	margin-top: 1.29rem;
+	margin-bottom: 0.32rem;
+	text-align: center;
+}
+.top .inviteText{
+	width: 5.44rem;
+	position: absolute;
+	top: 4.8rem;
+	left: 50%;
+	margin-left: -2.72rem;
+}
+.top .inviteNum{
+	width: 3.64rem;
+	position: absolute;
+	top: 6.9rem;
+	left: 50%;
+	margin-left: -1.82rem;
+}
+.top .inviteNum1{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 7.16rem;
+	color: #959595;
+	font-size: 0.26rem;
+}
+.top .inviteNum2{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 8.36rem;
+	color: #959595;
+	font-size: 0.26rem;
+}
+.top .num{
+	width: 100%;
+	position: absolute;
+	line-height: 0.61rem;
+	left: 0;
+	bottom: 1.2rem;
+	color: #f44a33;
+	font-size: 0.5rem;
+}
+.top .reward{
+	width: 100%;
+	position: absolute;
+	line-height: 0.61rem;
+	left: 0;
+	bottom: 0.28rem;
+	font-size: 0.24rem;
+	color: #959595;
+}
+.topImg{
+	width: 100%;
+}
+.register{
+	width: 6.67rem;
+	height: 4.87rem;
+	background: url(../img/register.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	margin: 0 auto;
+	padding-top: 0.66rem;
+	box-sizing: border-box;
+}
+.inputs{
+	padding: 0 0.11rem 0 0.21rem;
+	box-sizing: border-box;
+}
+.inputs .mobile,.inputs .message,.inputs .password,.inputs .checkBox{
+	position: relative;
+	width: 6.15rem;
+	height: 0.91rem;
+	line-height: 0.73rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;	
+	border-bottom: solid 1px #dbdbdb;
+	z-index: 40;
+	box-sizing: border-box;
+}
+#warn{
+	font-size: 0.24rem;
+	color: #f44a33;
+	margin-left: 0.3rem;
+}
+.inputs div input[type="text"]{
+	display: inline-block;
+	height: 0.5rem;
+	border: none;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+	line-height: normal;
+	line-height: 0.5rem;
+	width: 100%;
+	text-indent: 0.21rem;
+	margin-top: 0.2rem;
+}
+.btn{
+	width:6.65rem;
+	height:1.08rem;
+	margin: 0 auto;
+	margin-top: 0.08rem;
+	background:url(../img/register_btn.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	line-height: 0.9rem;
+	text-align: center;
+	margin-bottom: 0.21rem; 
+	font-size: 0.34rem;
+	color: #fff;
+	letter-spacing: 0.02rem;
+}
+.process{
+	width:6.67rem;
+	margin: 0 auto;
+}
+.process img{
+	width: 100%;
+}
+.msg{
+	box-sizing: border-box;
+	width: 2rem;
+	line-height: 0.32rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #f26958;
+	border-left: solid 0.02rem #fbb6ad;
+	text-indent: 0.2rem;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+}
+.padding{
+	line-height: 2.5rem;
+    width: 2.6rem;
+    margin-right: 0.2rem;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+}
+/* .msg{
+	position: absolute;
+	top: 50%;
+	margin-top: -0.16rem;
+	right: 0.32rem;
+	box-sizing: border-box;
+	width: 1.8rem;
+	line-height: 0.32rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #f26958;
+	border-left: solid 0.02rem #fbb6ad;
+	text-indent: 0.2rem;
+} */
+.inputs .checkBox {
+	border: none;
+	display: flex;
+	color: #c6c6c6;
+}
+.inputs .checkBox span{
+	display: block;
+	line-height: 0.9rem;
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-size: 0.28rem;
+	margin-top: -0.05rem;
+}
+.inputs .checkBox span:nth-of-type(1) {
+	text-align: inherit;
+	/* text-indent: 0.1rem; */
+	margin-right: 0.3rem;
+}
+.inputs .checkBox span img{
+	width: 0.32rem;
+	height: 0.32rem;
+	vertical-align: middle;
+}
+.bottom{
+	/* position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%; */
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background: #f44933;
+	font-size: 0.34rem;
+	color: #fff;
+	text-align: center;
+	z-index: 999;
+}
+/*弹框*/
+.shadow{ 
+	position: absolute; 
+	top: 0;
+	left: 0;
+	bottom: 0; 
+	right: 0; 
+	background: rgba(0, 0, 0, 0.5); 
+	z-index: 99999;
+	padding-top: 3rem;
+	box-sizing: border-box;
+}
+.shadow .box { 
+	background: #fbfbfb; 
+	width: 5.4rem; 
+	border-radius: 0.28rem; 
+	margin: 0 auto;
+}
+.box_text .title{
+	font-weight: bold;
+	color: #1a1519;
+	font-size: 0.32rem;
+}
+.shadow .box .box_text { 
+	padding: 0.2rem 0.4rem; 
+	line-height: 0.55rem; 
+	text-align: center; 
+	box-sizing: border-box;
+}
+.box_text .text{
+	color: #303030;
+	font-size: 0.3rem;
+	text-align: left; 
+}
+.shadow .box .box_btn { 
+	line-height: 0.9rem; 
+	display: -webkit-box; 
+}
+.shadow .box .box_btn span { 
+	display: block;
+	-webkit-box-flex: 1; 
+	text-align: center; 
+	border-top: solid 1px #bfbfbf; 
+}
+.shadow .box .cancel { 
+	border-right: solid 1px #ccc; 
+	color: #007aff; 
+	font-size: 0.32rem;
+}
+.shadow .box .confirm { 
+	color: #007aff; 
+	font-weight: bold;
+	font-size: 0.32rem;
+}
+.shadow2 {
+	position: absolute; 
+	top: 0;
+	left: 0;
+	bottom: 0; 
+	right: 0; 
+	background: rgba(0, 0, 0, 0.5); 
+	z-index: 99999;
+	padding-top: 3rem;
+	box-sizing: border-box;
+}
+.shadow2  img{
+	display: block;
+}
+.shadow2 .close{
+	width: 0.38rem;
+	position: absolute;
+	top: 2.8rem;
+	right: 1.28rem;
+}
+.shadow2 .text_con {
+	position: absolute;
+    top: 4rem;
+    left: 2.8rem;
+    width: 2rem;
+    color: #d97c00;
+    font-size: 0.22rem;
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+}
+.shadow2 .regImg{
+	width: 5.98rem;
+	margin: 0 auto;
+	margin-bottom: 0.3rem;
+}
+.shadow2 .button{
+	width: 2.6rem;
+	margin: 0 auto;
+}
